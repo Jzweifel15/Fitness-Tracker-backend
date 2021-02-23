@@ -38,7 +38,6 @@ ActiveRecord::Schema.define(version: 2021_02_18_122038) do
     t.integer "height"
     t.string "gender"
     t.string "email"
-    t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
