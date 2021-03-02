@@ -5,9 +5,19 @@ class ExercisesController < ApplicationController
     render json: exercises 
   end
 
+  def show
+    exercise = Exercise.find(params[:id])
+    render json: exercise
+  end
+
   def create
     exercise = Exercise.create(exercise_params)
     render json: exercise
+  end
+
+  def destroy
+    exercise = Exercise.find(params[:id])
+    exercise.destroy
   end
 
   private 
