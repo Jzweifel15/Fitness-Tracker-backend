@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   resources :users
   resources :meals
   resources :exercises
+  resources :body_mass_indices
 
 end
